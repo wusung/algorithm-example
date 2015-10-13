@@ -4,6 +4,19 @@ package com.example.algorithm.ch01;
  * Created by Green on 2015/09/12.
  */
 public class Math {
+
+    /**
+     * 最大公約數
+     * @param p
+     * @param q
+     * @return
+     */
+    public static int gcd(int p, int q) {
+        if (q == 0)
+            return p;
+        return gcd(q, p%q);
+    }
+
     public static int abs(int x) {
         if (x < 0) return -x;
         else return x;

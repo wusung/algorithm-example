@@ -16,7 +16,7 @@ public class Counter {
         count++;
     }
 
-    public int taliy() {
+    public int tally() {
         return count;
     }
 

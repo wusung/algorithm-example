@@ -30,4 +30,11 @@ public class MathTest extends TestCase {
         assertFalse(Math.isPrime(8));
         assertFalse(Math.isPrime(9));
     }
+
+    public void testGcd() throws Exception {
+        assertEquals(1, Math.gcd(1, 2));
+        assertEquals(2, Math.gcd(2, 6));
+        assertEquals(10, Math.gcd(100, 10));
+        assertEquals(10, Math.gcd(10, 100));
+    }
 }
