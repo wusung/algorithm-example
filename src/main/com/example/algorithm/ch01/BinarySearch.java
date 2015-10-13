@@ -1,5 +1,9 @@
 package com.example.algorithm.ch01;
 
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
 /**
  * @author Green
  * @since 2015/10/13
@@ -36,6 +40,17 @@ public class BinarySearch {
             return rank2(key, a, mid + 1, hi);
         } else {
             return mid;
+        }
+    }
+
+    public final static void main(String[] args) {
+        int[] whitelist = In.readInts(args[0]);
+        java.util.Arrays.sort(whitelist);
+        while (!StdIn.isEmpty()) {
+            int key = StdIn.readInt();
+            if (rank(key, whitelist) < 0) {
+                StdOut.println(key);
+            }
         }
     }
 }
