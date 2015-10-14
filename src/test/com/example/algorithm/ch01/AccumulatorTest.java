@@ -1,5 +1,6 @@
 package com.example.algorithm.ch01;
 
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -9,6 +10,16 @@ import org.junit.Test;
  * @since 2015/09/07
  */
 public class AccumulatorTest extends TestCase {
+
+    @Test
+    public void TestAccumulator() throws Exception {
+        int T = 1000000;
+        Accumulator a = new Accumulator();
+        for (int i = 0; i < T; i++) {
+            a.addDataValue(StdRandom.random());
+        }
+        StdOut.println(a);
+    }
 
 
     @Test

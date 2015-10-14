@@ -17,4 +17,10 @@ public class StringUtilsTest extends TestCase {
         assertFalse(StringUtils.isPalindrome("12"));
         assertFalse(StringUtils.isPalindrome("12:1234"));
     }
+
+    @Test
+    public void testIsSorted() throws Exception {
+        assertTrue(StringUtils.isSorted(new String[] {"1","2","3","4" }));
+        assertFalse(StringUtils.isSorted(new String[] {"1","2","4","3"}));
+    }
 }
