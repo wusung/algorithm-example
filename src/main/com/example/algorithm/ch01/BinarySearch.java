@@ -45,7 +45,7 @@ public class BinarySearch {
 
     public final static void main(String[] args) {
         int[] whitelist = In.readInts(args[0]);
-        java.util.Arrays.sort(whitelist);
+        java.util.Arrays.parallelSort(whitelist);
         while (!StdIn.isEmpty()) {
             int key = StdIn.readInt();
             if (rank(key, whitelist) < 0) {
