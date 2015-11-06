@@ -17,7 +17,7 @@ public class Rolls {
         }
 
         for (int i = 0; i < T; i++) {
-            rolls[StdRandom.uniform(1, SIDES+1)].increase();
+            rolls[StdRandom.uniform(1, SIDES+1)].increment();
         }
         for (int i = 1; i <= SIDES; i++) {
             StdOut.println(rolls[i]);

@@ -28,7 +28,7 @@ public class Interval2D {
             double y1 = java.lang.Math.random();
             Point2D p = new Point2D(x1, y1);
             if (box.contains(p)) {
-                hits.increase();
+                hits.increment();
             } else {
                 p.draw();
             }

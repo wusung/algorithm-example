@@ -23,10 +23,10 @@ public class CounterTest extends TestCase {
         Counter tails = new Counter("tails");
         for (int i = 0; i < T; i++) {
             if (StdRandom.bernoulli(0.5)) {
-                heads.increase();
+                heads.increment();
             }
             else {
-                tails.increase();
+                tails.increment();
             }
         }
         StdOut.println(heads);
